@@ -1,4 +1,5 @@
 """Auditable driver-level feature generation shared by dataset preparation and live scans."""
+import json
 import re
 from datetime import datetime, timedelta, timezone
 
@@ -101,6 +102,60 @@ def build_features(driver, events, crashes, reference_time=None):
     }
 
 
+VALID_CLASSIFICATIONS = {"normal", "suspicious", "faulty"}
+
+
+def validate_raw_evidence_records(records):
+    """Validate reviewed research records without filling in missing evidence.
+
+    Labels are manual ground truth: they must follow multi-source technical review and,
+    where applicable, controlled test conditions. They are never ML predictions.
+    """
+    if not isinstance(records, list) or not records:
+        raise ValueError("Raw evidence dataset must be a non-empty JSON array.")
+    duplicates, seen, errors = [], set(), []
+    required = {"driver", "events", "crashes", "classification"}
+    for index, record in enumerate(records, start=1):
+        prefix = f"Record {index}"
+        if not isinstance(record, dict):
+            errors.append(f"{prefix} must be an object.")
+            continue
+        missing = sorted(required - set(record))
+        if missing:
+            errors.append(f"{prefix} is missing required field(s): {missing}.")
+            continue
+        if not isinstance(record["driver"], dict):
+            errors.append(f"{prefix}.driver must be an object containing collected driver inventory data.")
+        elif not (record["driver"].get("driver_name") or record["driver"].get("file_name")):
+            errors.append(f"{prefix}.driver requires driver_name or file_name to associate evidence.")
+        for field in ("events", "crashes"):
+            if not isinstance(record[field], list) or any(not isinstance(item, dict) for item in record[field]):
+                errors.append(f"{prefix}.{field} must be a list of collected evidence objects; use [] only when that source genuinely had no accessible records.")
+        if isinstance(record["events"], list):
+            for item_number, event in enumerate(record["events"], start=1):
+                if isinstance(event, dict) and parse_timestamp(event.get("TimeCreated") or event.get("event_time")) is None:
+                    errors.append(f"{prefix}.events[{item_number}] requires a valid TimeCreated or event_time timestamp.")
+        if isinstance(record["crashes"], list):
+            for item_number, crash in enumerate(record["crashes"], start=1):
+                if isinstance(crash, dict) and parse_timestamp(crash.get("timestamp") or crash.get("TimeCreated")) is None:
+                    errors.append(f"{prefix}.crashes[{item_number}] requires a valid timestamp or TimeCreated timestamp.")
+        if "reference_time" in record and record["reference_time"] is not None and parse_timestamp(record["reference_time"]) is None:
+            errors.append(f"{prefix}.reference_time is not a valid timestamp.")
+        label = record.get("classification")
+        if not isinstance(label, str) or label.strip().lower() not in VALID_CLASSIFICATIONS:
+            errors.append(f"{prefix}.classification must be exactly one of: normal, suspicious, faulty.")
+        fingerprint = json.dumps(record, sort_keys=True, default=str, separators=(",", ":"))
+        if fingerprint in seen:
+            duplicates.append(index)
+        seen.add(fingerprint)
+    if duplicates:
+        errors.append(f"Duplicate raw evidence record(s) found at position(s): {duplicates}.")
+    if errors:
+        raise ValueError("Raw evidence dataset validation failed:\n- " + "\n- ".join(errors))
+    return records
+
+
 def build_feature_rows(records):
     """Dataset-preparation entry point using the exact live build_features implementation."""
-    return [{**build_features(record["driver"], record.get("events", []), record.get("crashes", []), record.get("reference_time")), "classification": record["classification"]} for record in records]
+    validate_raw_evidence_records(records)
+    return [{**build_features(record["driver"], record["events"], record["crashes"], record.get("reference_time")), "classification": record["classification"].strip().lower()} for record in records]
