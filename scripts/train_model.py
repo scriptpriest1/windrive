@@ -30,6 +30,7 @@ from app.features.feature_engineer import (
     CATEGORICAL_FEATURES, FEATURES, NUMERIC_FEATURES, VALID_CLASSIFICATIONS,
     build_feature_rows,
 )
+from app.ml.preprocessing import DropAllMissingColumns
 
 
 def load_dataset(dataset_path):
@@ -83,7 +84,9 @@ def main():
     features, labels = dataset[FEATURES], dataset["classification"]
     x_train, x_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42, stratify=labels)
     preprocessing = ColumnTransformer([
-        ("number", Pipeline([("impute", SimpleImputer(strategy="median"))]), NUMERIC_FEATURES),
+        # Update/install fields may be entirely unavailable. Drop only columns with
+        # zero observed training values, then apply median imputation to observed ones.
+        ("number", Pipeline([("drop_all_missing", DropAllMissingColumns()), ("impute", SimpleImputer(strategy="median"))]), NUMERIC_FEATURES),
         ("category", Pipeline([("impute", SimpleImputer(strategy="most_frequent")), ("encode", OneHotEncoder(handle_unknown="ignore"))]), CATEGORICAL_FEATURES),
     ])
     pipeline = Pipeline([("preprocessing", preprocessing), ("model", RandomForestClassifier(n_estimators=300, random_state=42, class_weight="balanced"))])
@@ -104,7 +107,16 @@ def main():
     output_dir = os.path.dirname(args.output)
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
-    joblib.dump({"pipeline": pipeline, "classes": list(pipeline.classes_), "feature_schema": FEATURES, "model_version": "1.0", "metrics": metrics}, args.output)
+    numeric_pipeline = pipeline.named_steps["preprocessing"].named_transformers_["number"]
+    joblib.dump({
+        "pipeline": pipeline,
+        "classes": list(pipeline.classes_),
+        # Keep the full declared schema, including unavailable update/install fields.
+        "feature_schema": FEATURES,
+        "model_version": "1.0",
+        "metrics": metrics,
+        "preprocessing_metadata": {"dropped_all_missing_numeric_features": numeric_pipeline.named_steps["drop_all_missing"].dropped_columns_},
+    }, args.output)
     print(json.dumps(metrics, indent=2))
 
 
