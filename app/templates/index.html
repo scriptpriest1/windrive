@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WinDrive — Driver Diagnostics</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">LOCAL WINDOWS DIAGNOSTICS</p>
+          <h1>Win<span>Drive</span></h1>
+        </div>
+        <div id="system" class="system">Loading system information…</div>
+      </header>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Driver health intelligence</p>
+          <h2>Detect unstable drivers before they interrupt your work.</h2>
+          <p>
+            WinDrive combines driver inventory, relevant Windows events, and
+            available crash evidence. Predictions are diagnostic
+            probabilities—not proof of cause.
+          </p>
+          <button id="scan">Start system scan <b>→</b></button>
+        </div>
+        <aside>
+          <div class="shield">⌁</div>
+          <strong>Read-only diagnostics</strong>
+          <p>WinDrive never changes, removes, installs, or disables drivers.</p>
+          <div id="permission" class="note"></div>
+        </aside>
+      </section>
+      <section id="progressCard" class="card hidden">
+        <div class="row">
+          <div>
+            <p class="eyebrow">SCAN IN PROGRESS</p>
+            <h3 id="stage">Preparing…</h3>
+          </div>
+          <span id="percent">0%</span>
+        </div>
+        <div class="bar"><i id="bar"></i></div>
+        <p id="scanMeta">Connecting to local diagnostic service…</p>
+      </section>
+      <section id="resultsCard" class="hidden">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">SCAN RESULTS</p>
+            <h2>Driver health overview</h2>
+          </div>
+          <div>
+            <button class="secondary" id="export">Export CSV</button
+            ><button class="secondary" id="newScan">New scan</button>
+          </div>
+        </div>
+        <div id="notice" class="note"></div>
+        <div class="filters">
+          <button data-filter="ALL" class="active">All</button
+          ><button data-filter="NORMAL">Normal</button
+          ><button data-filter="SUSPICIOUS">Suspicious</button
+          ><button data-filter="FAULTY">Faulty</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Driver</th>
+                <th>Associated device</th>
+                <th>Status</th>
+                <th>Confidence</th>
+                <th>Key evidence</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="history">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">PRESERVED HISTORY</p>
+            <h2>Previous reports</h2>
+          </div>
+        </div>
+        <div id="history">No stored scans yet.</div>
+      </section>
+    </main>
+    <dialog id="details">
+      <button class="close" onclick="details.close()">×</button>
+      <div id="detailContent"></div>
+    </dialog>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

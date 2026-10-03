@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+  --ink: #eaf0f4;
+  --muted: #98aab7;
+  --lime: #bef264;
+  --bg: #07151b;
+  --panel: #0d212a;
+  --line: #1b3742;
+  --amber: #fbbf24;
+  --red: #fb7185;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 70% -20%, #1d4e51 0, #07151b 43%), var(--bg);
+  color: var(--ink);
+  font-family: Manrope, Arial, sans-serif;
+}
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 36px 24px 64px;
+}
+header,
+.row,
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.eyebrow {
+  font: 11px "DM Mono";
+  letter-spacing: 0.15em;
+  color: var(--lime);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 34px;
+  margin: 0;
+  letter-spacing: -2px;
+}
+h1 span {
+  color: var(--lime);
+}
+h2 {
+  font-size: 30px;
+  letter-spacing: -1.2px;
+  margin: 0 0 10px;
+}
+h3 {
+  margin: 0;
+}
+.system {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 25px;
+  margin: 52px 0 26px;
+  padding: 44px;
+  background: #0a1b23cc;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.hero h2 {
+  font-size: 42px;
+  line-height: 1.12;
+  max-width: 650px;
+}
+.hero p {
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 690px;
+}
+button {
+  background: var(--lime);
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font: 700 13px Manrope;
+  color: #10200a;
+  cursor: pointer;
+}
+button b {
+  font-size: 18px;
+  margin-left: 12px;
+}
+.secondary,
+.filters button {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+}
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+.filters button.active {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+.hero aside {
+  background: #112b32;
+  padding: 25px;
+  border-radius: 12px;
+}
+.shield {
+  font-size: 44px;
+  color: var(--lime);
+}
+.hero aside p,
+.note {
+  font-size: 13px;
+  color: var(--muted);
+}
+.card,
+.history {
+  padding: 25px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin: 26px 0;
+}
+.bar {
+  height: 8px;
+  background: #17343c;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.bar i {
+  display: block;
+  background: var(--lime);
+  height: 100%;
+  width: 0;
+  transition: width 0.35s;
+}
+.hidden {
+  display: none !important;
+}
+.section-title {
+  margin: 38px 0 14px;
+}
+.table-wrap {
+  overflow: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  text-align: left;
+  color: var(--muted);
+  font: 11px "DM Mono";
+  letter-spacing: 0.08em;
+  padding: 13px;
+}
+td {
+  padding: 15px 13px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+.tag {
+  font: 700 10px "DM Mono";
+  letter-spacing: 0.08em;
+  padding: 5px 7px;
+  border-radius: 4px;
+  background: #1b3943;
+  color: var(--lime);
+}
+.tag.SUSPICIOUS {
+  color: var(--amber);
+}
+.tag.FAULTY {
+  color: var(--red);
+}
+.evidence {
+  max-width: 280px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.link {
+  background: none;
+  padding: 0;
+  color: var(--lime);
+  border: 0;
+}
+.history {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.scan-history {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+}
+dialog {
+  max-width: 700px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 14px;
+  padding: 30px;
+  line-height: 1.65;
+}
+.close {
+  float: right;
+  background: transparent;
+  color: var(--muted);
+  font-size: 22px;
+  padding: 0;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  color: var(--muted);
+}
+.detail-grid b {
+  color: var(--ink);
+}
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+  .hero h2 {
+    font-size: 32px;
+  }
+  header {
+    align-items: start;
+  }
+  .system {
+    text-align: left;
+  }
+  .section-title {
+    align-items: start;
+    flex-direction: column;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
