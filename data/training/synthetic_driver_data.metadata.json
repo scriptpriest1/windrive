@@ -1,0 +1,13 @@
+{
+  "generator_version": "1.0",
+  "generated_at": "2026-10-03T16:46:43.077951+00:00",
+  "seed": 20261003,
+  "record_count": 300,
+  "class_distribution": {
+    "faulty": 100,
+    "normal": 100,
+    "suspicious": 100
+  },
+  "description": "Synthetic development/training evidence fixtures. Not real-world Windows observations or independently validated ground truth.",
+  "raw_evidence_file": "data\\training\\synthetic_driver_data.json"
+}

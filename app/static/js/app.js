@@ -1,117 +1,47 @@
-let scanId = null,
-  results = [];
-function esc(s) {
-  return $("<div>")
-    .text(s || "—")
-    .html();
+let scanId = null;
+let results = [];
+const $ = (selector) => document.querySelector(selector);
+const escapeHtml = (value) => { const node = document.createElement("div"); node.textContent = value == null || value === "" ? "Unavailable" : String(value); return node.innerHTML; };
+const getJson = async (url) => { const response = await fetch(url); if (!response.ok) throw new Error(`Request failed (${response.status})`); return response.json(); };
+
+async function loadInfo() {
+  try { const data = await getJson("/api/system-info"); $("#system").innerHTML = `<b>${escapeHtml(data.computer_name)}</b><br>${escapeHtml(data.operating_system)}<br>Last scan: ${data.last_scan ? new Date(data.last_scan).toLocaleString() : "Not available"}`; } catch { $("#system").textContent = "System information unavailable."; }
+  try { const data = await getJson("/api/permissions"); $("#permission").textContent = data.message; } catch { $("#permission").textContent = "Permission status unavailable."; }
 }
-function loadInfo() {
-  $.getJSON("/api/system-info", (d) =>
-    $("#system").html(
-      `<b>${esc(d.computer_name)}</b><br>${esc(d.operating_system)}<br>Last scan: ${d.last_scan ? new Date(d.last_scan).toLocaleString() : "Not available"}`,
-    ),
-  );
-  $.getJSON("/api/permissions", (d) => $("#permission").text(d.message));
+
+async function loadHistory() {
+  try { const scans = await getJson("/api/scans"); $("#history").innerHTML = scans.length ? scans.map((scan) => `<div class="scan-history"><span>${new Date(scan.date).toLocaleString()} · ${escapeHtml(scan.computer)}<br>${scan.drivers} drivers · ${scan.counts.NORMAL} normal · ${scan.counts.SUSPICIOUS} suspicious · ${scan.counts.FAULTY} faulty</span><span>${escapeHtml(scan.status)} ${scan.status === "completed" ? `<button class="link view-scan" data-id="${scan.id}">View</button>` : ""}</span></div>`).join("") : "No stored scans yet."; } catch { $("#history").textContent = "Scan history is unavailable. Check the local database connection."; }
 }
-function loadHistory() {
-  $.getJSON("/api/scans", (scans) =>
-    $("#history").html(
-      scans.length
-        ? scans
-            .map(
-              (s) =>
-                `<div class="scan-history"><span>${new Date(s.date).toLocaleString()} · ${esc(s.computer)}<br>${s.drivers} drivers · ${s.counts.NORMAL} normal · ${s.counts.SUSPICIOUS} suspicious · ${s.counts.FAULTY} faulty</span><span>${esc(s.status)} ${s.status === "completed" ? `<button class="link" onclick="showResults(${s.id})">View</button>` : ""}</span></div>`,
-            )
-            .join("")
-        : "No stored scans yet.",
-    ),
-  );
-}
-function poll() {
-  $.getJSON(`/api/scan/${scanId}/progress`, (d) => {
-    $("#stage").text(d.stage);
-    $("#percent").text(d.progress + "%");
-    $("#bar").css("width", d.progress + "%");
-    $("#scanMeta").text(
-      `${d.drivers_found || 0} drivers · ${d.events_processed || 0} events · ${d.crash_records || 0} crash records`,
-    );
-    if (["completed", "failed", "cancelled"].includes(d.status)) {
-      if (d.status === "completed") showResults(scanId);
-      else $("#scanMeta").text(d.message || `Scan ${d.status}.`);
-      loadHistory();
-      return;
-    }
+
+async function poll() {
+  try {
+    const data = await getJson(`/api/scan/${scanId}/progress`);
+    $("#stage").textContent = data.stage; $("#percent").textContent = `${data.progress}%`; $("#bar").style.width = `${data.progress}%`;
+    $("#scanMeta").textContent = `${data.drivers_found || 0} drivers · ${data.events_processed || 0} events · ${data.crash_records || 0} crash records`;
+    if (["completed", "failed", "cancelled"].includes(data.status)) { if (data.status === "completed") await showResults(scanId); else $("#scanMeta").textContent = data.message || `Scan ${data.status}.`; await loadHistory(); return; }
     setTimeout(poll, 1000);
-  });
+  } catch (error) { $("#scanMeta").textContent = `Progress unavailable: ${error.message}`; }
 }
-$("#scan,#newScan").click(() => {
-  $("#resultsCard").addClass("hidden");
-  $("#progressCard").removeClass("hidden");
-  $.post("/api/scans/start", (d) => {
-    scanId = d.id;
-    poll();
-  }).fail((x) =>
-    alert(
-      x.responseJSON?.error ||
-        "Unable to start scan. Ensure MySQL/XAMPP is running.",
-    ),
-  );
-});
-function showResults(id) {
-  scanId = id;
-  $("#progressCard").addClass("hidden");
-  $.getJSON(`/api/scan/${id}/results`, (d) => {
-    results = d.results;
-    $("#resultsCard").removeClass("hidden");
-    $("#notice").text(
-      d.scan.warning ||
-        "Classifications are probability-based ML predictions and require verification.",
-    );
-    render("ALL");
-  });
+
+async function startScan() {
+  $("#resultsCard").classList.add("hidden"); $("#progressCard").classList.remove("hidden");
+  try { const response = await fetch("/api/scans/start", { method: "POST" }); const data = await response.json(); if (!response.ok) throw new Error(data.error || "Unable to start scan."); scanId = data.id; poll(); } catch (error) { $("#scanMeta").textContent = error.message; }
 }
+
 function render(filter) {
-  let r =
-    filter === "ALL"
-      ? results
-      : results.filter((x) => x.classification === filter);
-  $("#rows").html(
-    r
-      .map(
-        (x) =>
-          `<tr><td><b>${esc(x.driver)}</b></td><td>${esc(x.device)}</td><td><span class="tag ${x.classification}">${x.classification}</span></td><td>${(x.confidence * 100).toFixed(1)}%</td><td class="evidence">${esc(x.evidence)}</td><td><button class="link" onclick="detailsFor(${x.id})">Details</button></td></tr>`,
-      )
-      .join("") || '<tr><td colspan="6">No matching drivers.</td></tr>',
-  );
+  const visible = filter === "ALL" ? results : results.filter((item) => item.classification === filter);
+  $("#rows").innerHTML = visible.map((item) => `<tr><td><b>${escapeHtml(item.driver)}</b></td><td>${escapeHtml(item.device)}</td><td><span class="tag ${item.classification}">${escapeHtml(item.classification)}</span></td><td>${(item.confidence * 100).toFixed(1)}%</td><td class="evidence">${escapeHtml(item.evidence)}</td><td><button class="link detail-driver" data-id="${item.id}">Details</button></td></tr>`).join("") || '<tr><td colspan="6">No matching drivers.</td></tr>';
 }
-$(".filters button").click(function () {
-  $(".filters button").removeClass("active");
-  $(this).addClass("active");
-  render($(this).data("filter"));
-});
-function detailsFor(driverId) {
-  $.getJSON(`/api/scan/${scanId}/driver/${driverId}`, (d) => {
-    let x = d.driver,
-      p = d.prediction;
-    $("#detailContent").html(
-      `<p class="eyebrow">DRIVER DIAGNOSTIC</p><h2>${esc(x.driver_name)}</h2><p><span class="tag ${p.classification}">${p.classification}</span> ${(p.confidence * 100).toFixed(1)}% confidence</p><div class="detail-grid">${[
-        ["Device", x.device_name],
-        ["Provider", x.provider],
-        ["Version", x.version],
-        ["Driver date", x.driver_date],
-        ["Path", x.driver_path],
-        ["Category", x.device_category],
-        ["Signature", x.signature_status],
-        ["Device status", x.device_status],
-      ]
-        .map((v) => `<div><b>${v[0]}</b><br>${esc(v[1])}</div>`)
-        .join(
-          "",
-        )}</div><h3>Evidence</h3><p>${esc(p.evidence)}</p><h3>Recommendation</h3><p>${esc(p.recommendation)}</p><p class="note">This is a diagnostic prediction, not absolute proof that this driver caused a problem.</p>`,
-    );
-    details.showModal();
-  });
+
+async function showResults(id) {
+  scanId = id; $("#progressCard").classList.add("hidden");
+  try { const data = await getJson(`/api/scan/${id}/results`); results = data.results; $("#resultsCard").classList.remove("hidden"); const scanEvidence = data.scan.unassociated_event_count ? ` ${data.scan.unassociated_event_count} relevant event(s) were retained as scan-level evidence because they could not be confidently linked to a driver.` : ""; const warning = data.scan.warning ? `Collection note: ${data.scan.warning} ` : ""; $("#notice").textContent = `${warning}Classifications are probability-based ML predictions and require verification.${scanEvidence}`; render("ALL"); } catch (error) { $("#notice").textContent = `Results unavailable: ${error.message}`; }
 }
-$("#export").click(() => (window.location = `/api/reports/${scanId}/export`));
-loadInfo();
-loadHistory();
+
+async function detailsFor(driverId) {
+  try { const data = await getJson(`/api/scan/${scanId}/driver/${driverId}`); const driver = data.driver, prediction = data.prediction; const predictionHtml = prediction ? `<p><span class="tag ${prediction.classification}">${prediction.classification}</span> ${(prediction.confidence * 100).toFixed(1)}% confidence</p><h3>Evidence</h3><p>${escapeHtml(prediction.evidence)}</p><h3>Recommendation</h3><p>${escapeHtml(prediction.recommendation)}</p>` : "<p class=\"note\">Prediction unavailable for this driver.</p>"; const eventHtml = data.events.length ? `<h3>Associated Event Log records</h3>${data.events.map((event) => `<p class="evidence"><b>${escapeHtml(event.time)}</b> · ${escapeHtml(event.source)} #${escapeHtml(event.id)} · ${escapeHtml(event.severity)}<br>${escapeHtml(event.message)}</p>`).join("")}` : "<p class=\"note\">No Event Log records were confidently associated with this driver. Relevant unmatched events remain scan-level evidence.</p>"; $("#detailContent").innerHTML = `<p class="eyebrow">DRIVER DIAGNOSTIC</p><h2>${escapeHtml(driver.driver_name)}</h2>${predictionHtml}<div class="detail-grid">${[["Device", driver.device_name], ["Provider", driver.provider], ["Version", driver.version], ["Driver date", driver.driver_date], ["Path", driver.driver_path], ["Category", driver.device_category], ["Signature", driver.signature_status], ["Start status", driver.driver_start_status], ["Device status", driver.device_status]].map(([name, value]) => `<div><b>${name}</b><br>${escapeHtml(value)}</div>`).join("")}</div>${eventHtml}<p class="note">This is a diagnostic prediction, not proof that this driver caused a system problem.</p>`; $("#details").showModal(); } catch (error) { alert(`Driver details unavailable: ${error.message}`); }
+}
+
+$("#scan").addEventListener("click", startScan); $("#newScan").addEventListener("click", startScan); $("#export").addEventListener("click", () => { if (scanId) window.location = `/api/reports/${scanId}/export`; }); $("#exportPdf").addEventListener("click", () => { if (scanId) window.location = `/api/reports/${scanId}/export?format=pdf`; }); $("#closeDetails").addEventListener("click", () => $("#details").close());
+document.addEventListener("click", (event) => { if (event.target.matches(".view-scan")) showResults(Number(event.target.dataset.id)); if (event.target.matches(".detail-driver")) detailsFor(Number(event.target.dataset.id)); if (event.target.matches(".filters button")) { document.querySelectorAll(".filters button").forEach((button) => button.classList.remove("active")); event.target.classList.add("active"); render(event.target.dataset.filter); } });
+loadInfo(); loadHistory();

@@ -106,10 +106,10 @@ VALID_CLASSIFICATIONS = {"normal", "suspicious", "faulty"}
 
 
 def validate_raw_evidence_records(records):
-    """Validate reviewed research records without filling in missing evidence.
+    """Validate labelled raw evidence records without filling in missing evidence.
 
-    Labels are manual ground truth: they must follow multi-source technical review and,
-    where applicable, controlled test conditions. They are never ML predictions.
+    Labels may be controlled synthetic labels or technically reviewed labels; they are
+    never generated from the model being trained.
     """
     if not isinstance(records, list) or not records:
         raise ValueError("Raw evidence dataset must be a non-empty JSON array.")

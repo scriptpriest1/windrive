@@ -27,7 +27,7 @@
           <button id="scan">Start system scan <b>→</b></button>
         </div>
         <aside>
-          <div class="shield">⌁</div>
+          <div class="shield">◇</div>
           <strong>Read-only diagnostics</strong>
           <p>WinDrive never changes, removes, installs, or disables drivers.</p>
           <div id="permission" class="note"></div>
@@ -51,8 +51,9 @@
             <h2>Driver health overview</h2>
           </div>
           <div>
-            <button class="secondary" id="export">Export CSV</button
-            ><button class="secondary" id="newScan">New scan</button>
+            <button class="secondary" id="export">Export CSV</button>
+            <button class="secondary" id="exportPdf">Export PDF</button>
+            <button class="secondary" id="newScan">New scan</button>
           </div>
         </div>
         <div id="notice" class="note"></div>
@@ -89,10 +90,9 @@
       </section>
     </main>
     <dialog id="details">
-      <button class="close" onclick="details.close()">×</button>
+      <button class="close" id="closeDetails" aria-label="Close">×</button>
       <div id="detailContent"></div>
     </dialog>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/static/js/app.js"></script>
   </body>
 </html>
