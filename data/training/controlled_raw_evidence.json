@@ -1,0 +1,2601 @@
+[
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv001.sys",
+      "file_name": "testdrv001.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.1",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv001.sys",
+      "device_name": "Synthetic Test Device 001",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv002.sys",
+      "file_name": "testdrv002.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.2",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv002.sys",
+      "device_name": "Synthetic Test Device 002",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv003.sys",
+      "file_name": "testdrv003.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.3",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv003.sys",
+      "device_name": "Synthetic Test Device 003",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv003.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv004.sys",
+      "file_name": "testdrv004.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.4",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv004.sys",
+      "device_name": "Synthetic Test Device 004",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv005.sys",
+      "file_name": "testdrv005.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.5",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv005.sys",
+      "device_name": "Synthetic Test Device 005",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv006.sys",
+      "file_name": "testdrv006.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.6",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv006.sys",
+      "device_name": "Synthetic Test Device 006",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv006.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv007.sys",
+      "file_name": "testdrv007.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.7",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv007.sys",
+      "device_name": "Synthetic Test Device 007",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv008.sys",
+      "file_name": "testdrv008.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.8",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv008.sys",
+      "device_name": "Synthetic Test Device 008",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv009.sys",
+      "file_name": "testdrv009.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.9",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv009.sys",
+      "device_name": "Synthetic Test Device 009",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv009.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv010.sys",
+      "file_name": "testdrv010.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.10",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv010.sys",
+      "device_name": "Synthetic Test Device 010",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv011.sys",
+      "file_name": "testdrv011.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.11",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv011.sys",
+      "device_name": "Synthetic Test Device 011",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv012.sys",
+      "file_name": "testdrv012.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.12",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv012.sys",
+      "device_name": "Synthetic Test Device 012",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv012.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv013.sys",
+      "file_name": "testdrv013.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.13",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv013.sys",
+      "device_name": "Synthetic Test Device 013",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv014.sys",
+      "file_name": "testdrv014.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.14",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv014.sys",
+      "device_name": "Synthetic Test Device 014",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv015.sys",
+      "file_name": "testdrv015.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.15",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv015.sys",
+      "device_name": "Synthetic Test Device 015",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv015.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv016.sys",
+      "file_name": "testdrv016.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.16",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv016.sys",
+      "device_name": "Synthetic Test Device 016",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv017.sys",
+      "file_name": "testdrv017.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.17",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv017.sys",
+      "device_name": "Synthetic Test Device 017",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv018.sys",
+      "file_name": "testdrv018.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.18",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv018.sys",
+      "device_name": "Synthetic Test Device 018",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv018.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv019.sys",
+      "file_name": "testdrv019.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.19",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv019.sys",
+      "device_name": "Synthetic Test Device 019",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv020.sys",
+      "file_name": "testdrv020.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.20",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv020.sys",
+      "device_name": "Synthetic Test Device 020",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv021.sys",
+      "file_name": "testdrv021.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.21",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv021.sys",
+      "device_name": "Synthetic Test Device 021",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv021.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv022.sys",
+      "file_name": "testdrv022.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.22",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv022.sys",
+      "device_name": "Synthetic Test Device 022",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv023.sys",
+      "file_name": "testdrv023.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.23",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv023.sys",
+      "device_name": "Synthetic Test Device 023",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv024.sys",
+      "file_name": "testdrv024.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.24",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv024.sys",
+      "device_name": "Synthetic Test Device 024",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv024.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv025.sys",
+      "file_name": "testdrv025.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.25",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv025.sys",
+      "device_name": "Synthetic Test Device 025",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv026.sys",
+      "file_name": "testdrv026.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.26",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv026.sys",
+      "device_name": "Synthetic Test Device 026",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv027.sys",
+      "file_name": "testdrv027.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.27",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv027.sys",
+      "device_name": "Synthetic Test Device 027",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv027.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv028.sys",
+      "file_name": "testdrv028.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.28",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv028.sys",
+      "device_name": "Synthetic Test Device 028",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv029.sys",
+      "file_name": "testdrv029.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.29",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv029.sys",
+      "device_name": "Synthetic Test Device 029",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv030.sys",
+      "file_name": "testdrv030.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.30",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv030.sys",
+      "device_name": "Synthetic Test Device 030",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv030.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv031.sys",
+      "file_name": "testdrv031.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.31",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv031.sys",
+      "device_name": "Synthetic Test Device 031",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv032.sys",
+      "file_name": "testdrv032.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.32",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv032.sys",
+      "device_name": "Synthetic Test Device 032",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv033.sys",
+      "file_name": "testdrv033.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.33",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv033.sys",
+      "device_name": "Synthetic Test Device 033",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv033.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv034.sys",
+      "file_name": "testdrv034.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.34",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv034.sys",
+      "device_name": "Synthetic Test Device 034",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv035.sys",
+      "file_name": "testdrv035.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.35",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv035.sys",
+      "device_name": "Synthetic Test Device 035",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv036.sys",
+      "file_name": "testdrv036.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.36",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv036.sys",
+      "device_name": "Synthetic Test Device 036",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv036.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv037.sys",
+      "file_name": "testdrv037.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.37",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv037.sys",
+      "device_name": "Synthetic Test Device 037",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv038.sys",
+      "file_name": "testdrv038.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.38",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv038.sys",
+      "device_name": "Synthetic Test Device 038",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv039.sys",
+      "file_name": "testdrv039.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.39",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv039.sys",
+      "device_name": "Synthetic Test Device 039",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv039.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv040.sys",
+      "file_name": "testdrv040.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.40",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv040.sys",
+      "device_name": "Synthetic Test Device 040",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv041.sys",
+      "file_name": "testdrv041.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.41",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv041.sys",
+      "device_name": "Synthetic Test Device 041",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv042.sys",
+      "file_name": "testdrv042.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.42",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv042.sys",
+      "device_name": "Synthetic Test Device 042",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-21T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7012,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv042.sys: informational configuration notice"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv043.sys",
+      "file_name": "testdrv043.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.43",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv043.sys",
+      "device_name": "Synthetic Test Device 043",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv044.sys",
+      "file_name": "testdrv044.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.44",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv044.sys",
+      "device_name": "Synthetic Test Device 044",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv044.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv044.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv045.sys",
+      "file_name": "testdrv045.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.45",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv045.sys",
+      "device_name": "Synthetic Test Device 045",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv045.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv046.sys",
+      "file_name": "testdrv046.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.46",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv046.sys",
+      "device_name": "Synthetic Test Device 046",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv046.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv047.sys",
+      "file_name": "testdrv047.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.47",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv047.sys",
+      "device_name": "Synthetic Test Device 047",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv047.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv048.sys",
+      "file_name": "testdrv048.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.48",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv048.sys",
+      "device_name": "Synthetic Test Device 048",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv048.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv048.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv049.sys",
+      "file_name": "testdrv049.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.49",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv049.sys",
+      "device_name": "Synthetic Test Device 049",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv049.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv050.sys",
+      "file_name": "testdrv050.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.50",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv050.sys",
+      "device_name": "Synthetic Test Device 050",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv050.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv051.sys",
+      "file_name": "testdrv051.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.51",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv051.sys",
+      "device_name": "Synthetic Test Device 051",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv051.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv052.sys",
+      "file_name": "testdrv052.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.52",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv052.sys",
+      "device_name": "Synthetic Test Device 052",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv052.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv052.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv053.sys",
+      "file_name": "testdrv053.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.53",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv053.sys",
+      "device_name": "Synthetic Test Device 053",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv053.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv054.sys",
+      "file_name": "testdrv054.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.54",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv054.sys",
+      "device_name": "Synthetic Test Device 054",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv054.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv055.sys",
+      "file_name": "testdrv055.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.55",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv055.sys",
+      "device_name": "Synthetic Test Device 055",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv055.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv056.sys",
+      "file_name": "testdrv056.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.56",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv056.sys",
+      "device_name": "Synthetic Test Device 056",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv056.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv056.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv057.sys",
+      "file_name": "testdrv057.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.57",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv057.sys",
+      "device_name": "Synthetic Test Device 057",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv057.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv058.sys",
+      "file_name": "testdrv058.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.58",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv058.sys",
+      "device_name": "Synthetic Test Device 058",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv058.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv059.sys",
+      "file_name": "testdrv059.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.59",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv059.sys",
+      "device_name": "Synthetic Test Device 059",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv059.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv060.sys",
+      "file_name": "testdrv060.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.60",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv060.sys",
+      "device_name": "Synthetic Test Device 060",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv060.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv060.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv061.sys",
+      "file_name": "testdrv061.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.61",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv061.sys",
+      "device_name": "Synthetic Test Device 061",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv061.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv062.sys",
+      "file_name": "testdrv062.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.62",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv062.sys",
+      "device_name": "Synthetic Test Device 062",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv062.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv063.sys",
+      "file_name": "testdrv063.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.63",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv063.sys",
+      "device_name": "Synthetic Test Device 063",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv063.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv064.sys",
+      "file_name": "testdrv064.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.64",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv064.sys",
+      "device_name": "Synthetic Test Device 064",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv064.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv064.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv065.sys",
+      "file_name": "testdrv065.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.65",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv065.sys",
+      "device_name": "Synthetic Test Device 065",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv065.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv066.sys",
+      "file_name": "testdrv066.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.66",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv066.sys",
+      "device_name": "Synthetic Test Device 066",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv066.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv067.sys",
+      "file_name": "testdrv067.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.67",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv067.sys",
+      "device_name": "Synthetic Test Device 067",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv067.sys: device reset completed"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv068.sys",
+      "file_name": "testdrv068.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.68",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv068.sys",
+      "device_name": "Synthetic Test Device 068",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv068.sys: intermittent driver warning"
+      },
+      {
+        "TimeCreated": "2026-09-27T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7006,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv068.sys: intermittent driver warning"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv069.sys",
+      "file_name": "testdrv069.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.69",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv069.sys",
+      "device_name": "Synthetic Test Device 069",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv069.sys: recoverable device communication error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv070.sys",
+      "file_name": "testdrv070.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.70",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv070.sys",
+      "device_name": "Synthetic Test Device 070",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 10
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv070.sys: operation timeout recovered"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv071.sys",
+      "file_name": "testdrv071.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.71",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv071.sys",
+      "device_name": "Synthetic Test Device 071",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv071.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv071.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv071.sys: operation timeout and device reset"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv072.sys",
+      "file_name": "testdrv072.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.72",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv072.sys",
+      "device_name": "Synthetic Test Device 072",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv072.sys: driver start failed"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv072.sys: driver failed during initialization"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv073.sys",
+      "file_name": "testdrv073.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.73",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv073.sys",
+      "device_name": "Synthetic Test Device 073",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv073.sys: unrecoverable I/O failure"
+      }
+    ],
+    "crashes": [
+      {
+        "timestamp": "2026-10-02T12:00:00Z",
+        "module_names": [
+          "testdrv073.sys"
+        ],
+        "message": "Synthetic BugCheck references testdrv073.sys"
+      }
+    ],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv074.sys",
+      "file_name": "testdrv074.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.74",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv074.sys",
+      "device_name": "Synthetic Test Device 074",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv074.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv074.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-25T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7008,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv074.sys: repeated driver operation error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv075.sys",
+      "file_name": "testdrv075.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.75",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv075.sys",
+      "device_name": "Synthetic Test Device 075",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv075.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv075.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv075.sys: operation timeout and device reset"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv076.sys",
+      "file_name": "testdrv076.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.76",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv076.sys",
+      "device_name": "Synthetic Test Device 076",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv076.sys: driver start failed"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv076.sys: driver failed during initialization"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv077.sys",
+      "file_name": "testdrv077.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.77",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv077.sys",
+      "device_name": "Synthetic Test Device 077",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv077.sys: unrecoverable I/O failure"
+      }
+    ],
+    "crashes": [
+      {
+        "timestamp": "2026-10-02T12:00:00Z",
+        "module_names": [
+          "testdrv077.sys"
+        ],
+        "message": "Synthetic BugCheck references testdrv077.sys"
+      }
+    ],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv078.sys",
+      "file_name": "testdrv078.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.78",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv078.sys",
+      "device_name": "Synthetic Test Device 078",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv078.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv078.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-25T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7008,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv078.sys: repeated driver operation error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv079.sys",
+      "file_name": "testdrv079.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.79",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv079.sys",
+      "device_name": "Synthetic Test Device 079",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv079.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv079.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv079.sys: operation timeout and device reset"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv080.sys",
+      "file_name": "testdrv080.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.80",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv080.sys",
+      "device_name": "Synthetic Test Device 080",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv080.sys: driver start failed"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv080.sys: driver failed during initialization"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv081.sys",
+      "file_name": "testdrv081.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.81",
+      "driver_date": "20250115",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv081.sys",
+      "device_name": "Synthetic Test Device 081",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv081.sys: unrecoverable I/O failure"
+      }
+    ],
+    "crashes": [
+      {
+        "timestamp": "2026-10-02T12:00:00Z",
+        "module_names": [
+          "testdrv081.sys"
+        ],
+        "message": "Synthetic BugCheck references testdrv081.sys"
+      }
+    ],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv082.sys",
+      "file_name": "testdrv082.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.82",
+      "driver_date": "20250215",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv082.sys",
+      "device_name": "Synthetic Test Device 082",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv082.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv082.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-25T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7008,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv082.sys: repeated driver operation error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv083.sys",
+      "file_name": "testdrv083.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.6.83",
+      "driver_date": "20250315",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv083.sys",
+      "device_name": "Synthetic Test Device 083",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv083.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv083.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv083.sys: operation timeout and device reset"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv084.sys",
+      "file_name": "testdrv084.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.0.84",
+      "driver_date": "20250415",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv084.sys",
+      "device_name": "Synthetic Test Device 084",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv084.sys: driver start failed"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv084.sys: driver failed during initialization"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv085.sys",
+      "file_name": "testdrv085.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.1.85",
+      "driver_date": "20250515",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv085.sys",
+      "device_name": "Synthetic Test Device 085",
+      "device_category": "Net",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv085.sys: unrecoverable I/O failure"
+      }
+    ],
+    "crashes": [
+      {
+        "timestamp": "2026-10-02T12:00:00Z",
+        "module_names": [
+          "testdrv085.sys"
+        ],
+        "message": "Synthetic BugCheck references testdrv085.sys"
+      }
+    ],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv086.sys",
+      "file_name": "testdrv086.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.2.86",
+      "driver_date": "20250615",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv086.sys",
+      "device_name": "Synthetic Test Device 086",
+      "device_category": "Display",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv086.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-30T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7003,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv086.sys: repeated driver operation error"
+      },
+      {
+        "TimeCreated": "2026-09-25T09:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7008,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv086.sys: repeated driver operation error"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv087.sys",
+      "file_name": "testdrv087.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.3.87",
+      "driver_date": "20250715",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv087.sys",
+      "device_name": "Synthetic Test Device 087",
+      "device_category": "USB",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv087.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv087.sys: operation timeout and device reset"
+      },
+      {
+        "TimeCreated": "2026-09-29T08:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7004,
+        "LevelDisplayName": "Warning",
+        "Message": "testdrv087.sys: operation timeout and device reset"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv088.sys",
+      "file_name": "testdrv088.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.4.88",
+      "driver_date": "20250815",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv088.sys",
+      "device_name": "Synthetic Test Device 088",
+      "device_category": "SCSIAdapter",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv088.sys: driver start failed"
+      },
+      {
+        "TimeCreated": "2026-10-01T10:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7002,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv088.sys: driver failed during initialization"
+      }
+    ],
+    "crashes": [],
+    "reference_time": "2026-10-03T12:00:00Z"
+  },
+  {
+    "dataset_source": "synthetic_controlled_fixture",
+    "fixture_notice": "Synthetic controlled test fixture; not collected from a Windows machine.",
+    "driver": {
+      "driver_name": "testdrv089.sys",
+      "file_name": "testdrv089.sys",
+      "provider": "WinDrive Test Fixture Provider",
+      "version": "1.5.89",
+      "driver_date": "20250915",
+      "driver_path": "C:/WinDriveFixtures/drivers/testdrv089.sys",
+      "device_name": "Synthetic Test Device 089",
+      "device_category": "HIDClass",
+      "signature_status": "Signed",
+      "driver_start_status": "True",
+      "device_status": "OK",
+      "device_error_code": 0
+    },
+    "events": [
+      {
+        "TimeCreated": "2026-10-02T11:00:00Z",
+        "ProviderName": "WinDrive-Test-System",
+        "Id": 7001,
+        "LevelDisplayName": "Error",
+        "Message": "testdrv089.sys: unrecoverable I/O failure"
+      }
+    ],
+    "crashes": [
+      {
+        "timestamp": "2026-10-02T12:00:00Z",
+        "module_names": [
+          "testdrv089.sys"
+        ],
+        "message": "Synthetic BugCheck references testdrv089.sys"
+      }
+    ],
+    "reference_time": "2026-10-03T12:00:00Z"
+  }
+]

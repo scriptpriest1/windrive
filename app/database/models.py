@@ -19,6 +19,8 @@ class ScanSession(db.Model):
     progress = db.Column(db.Integer, default=0)
     current_stage = db.Column(db.String(255), default="Pending")
     error_message = db.Column(db.Text)
+    # Raw crash/BugCheck metadata collected for a scan; absent means unavailable.
+    crash_evidence = db.Column(db.Text)
     created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     drivers = db.relationship("Driver", backref="scan", lazy=True, cascade="all, delete-orphan")
 

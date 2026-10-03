@@ -1,4 +1,4 @@
-import threading, time
+import json, threading, time
 from datetime import datetime
 from app.database.models import db, ScanSession, Driver, Event, Prediction
 from app.services.system_service import system_info
@@ -34,6 +34,8 @@ def _run(app, scan_id):
       for row in events:
         message=row.get('Message') or ''; linked=next((d for d in persisted if (d.driver_name or '').lower() in message.lower()),None)
         db.session.add(Event(scan_id=scan.id,driver_id=linked.id if linked else None,event_time=parse_timestamp(row.get('TimeCreated')),event_source=row.get('ProviderName'),event_code=row.get('Id'),severity=row.get('LevelDisplayName'),description=message,related_device=None))
+      # Preserve raw crash/BugCheck metadata for later technical research review.
+      scan.crash_evidence=json.dumps(crashes)
       db.session.commit(); update(scan,72,'Engineering driver features')
       for i,item in enumerate(persisted):
         row={c.name:getattr(item,c.name) for c in item.__table__.columns}; features=build_features(row,events,crashes)
