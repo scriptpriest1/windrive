@@ -35,7 +35,7 @@ function render(filter) {
 
 async function showResults(id) {
   scanId = id; $("#progressCard").classList.add("hidden");
-  try { const data = await getJson(`/api/scan/${id}/results`); results = data.results; $("#resultsCard").classList.remove("hidden"); const scanEvidence = data.scan.unassociated_event_count ? ` ${data.scan.unassociated_event_count} relevant event(s) were retained as scan-level evidence because they could not be confidently linked to a driver.` : ""; const warning = data.scan.warning ? `Collection note: ${data.scan.warning} ` : ""; $("#notice").textContent = `${warning}Classifications are probability-based ML predictions and require verification.${scanEvidence}`; render("ALL"); } catch (error) { $("#notice").textContent = `Results unavailable: ${error.message}`; }
+  try { const data = await getJson(`/api/scan/${id}/results`); results = data.results; $("#resultsCard").classList.remove("hidden"); const scanEvidence = data.scan.unassociated_event_count ? ` ${data.scan.unassociated_event_count} relevant event(s) were retained as scan-level evidence because they could not be confidently linked to a driver.` : ""; const warning = data.scan.warning ? `Collection note: ${data.scan.warning} ` : ""; render("ALL"); } catch (error) { $("#notice").textContent = `Results unavailable: ${error.message}`; }
 }
 
 async function detailsFor(driverId) {
