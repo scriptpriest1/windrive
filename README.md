@@ -9,7 +9,7 @@ Predictions are probability-based diagnostic aids, not proof of root cause. WinD
 1. Start MySQL in XAMPP and create the database: `CREATE DATABASE windrive CHARACTER SET utf8mb4;`
 2. Create and activate a Python 3.10+ virtual environment, then run `pip install -r requirements.txt`.
 3. Set `WINDRIVE_DATABASE_URL` if your MySQL credentials differ from `mysql+pymysql://root:@localhost/windrive`.
-4. Train the model using a reviewed labelled dataset containing all fields in `app.features.feature_engineer.FEATURES` plus `classification`:
+4. Train the model using a reviewed labelled dataset. An engineered CSV must contain all fields in `app.features.feature_engineer.FEATURES` plus `classification`. Prefer a reviewed evidence JSON array whose records include `driver`, `events`, `crashes`, and `classification`; WinDrive will generate its features with the exact same function used during live scans:
    `python scripts/train_model.py data/training/labelled_driver_data.csv`
 5. Run `python run.py` and open `http://127.0.0.1:5000`.
 

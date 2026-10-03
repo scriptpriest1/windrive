@@ -6,6 +6,7 @@ from app.collectors.driver_collector import collect_drivers
 from app.collectors.event_collector import collect_events
 from app.collectors.crash_collector import collect_crashes
 from app.features.feature_engineer import build_features
+from app.features.feature_engineer import parse_timestamp
 from app.ml.predictor import predict
 from app.explanations.explainer import explain
 from app.recommendations.recommender import recommend
@@ -32,7 +33,7 @@ def _run(app, scan_id):
       db.session.flush()
       for row in events:
         message=row.get('Message') or ''; linked=next((d for d in persisted if (d.driver_name or '').lower() in message.lower()),None)
-        db.session.add(Event(scan_id=scan.id,driver_id=linked.id if linked else None,event_time=None,event_source=row.get('ProviderName'),event_code=row.get('Id'),severity=row.get('LevelDisplayName'),description=message,related_device=None))
+        db.session.add(Event(scan_id=scan.id,driver_id=linked.id if linked else None,event_time=parse_timestamp(row.get('TimeCreated')),event_source=row.get('ProviderName'),event_code=row.get('Id'),severity=row.get('LevelDisplayName'),description=message,related_device=None))
       db.session.commit(); update(scan,72,'Engineering driver features')
       for i,item in enumerate(persisted):
         row={c.name:getattr(item,c.name) for c in item.__table__.columns}; features=build_features(row,events,crashes)

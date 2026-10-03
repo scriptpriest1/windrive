@@ -10,11 +10,16 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
-from app.features.feature_engineer import NUMERIC_FEATURES, CATEGORICAL_FEATURES, FEATURES
+from app.features.feature_engineer import NUMERIC_FEATURES, CATEGORICAL_FEATURES, FEATURES, build_feature_rows
 
 def main():
  p=argparse.ArgumentParser(); p.add_argument('dataset'); p.add_argument('--output',default='artifacts/models/driver_classifier.joblib'); args=p.parse_args()
- df=pd.read_csv(args.dataset).drop_duplicates(); required=set(FEATURES+['classification']); missing=required-set(df.columns)
+ if args.dataset.lower().endswith('.json'):
+  # Reviewed evidence records: driver, events, crashes, optional reference_time, classification.
+  # This uses precisely the same feature function used by live scanning.
+  with open(args.dataset, encoding='utf-8') as source: df=pd.DataFrame(build_feature_rows(json.load(source)))
+ else: df=pd.read_csv(args.dataset)
+ df=df.drop_duplicates(); required=set(FEATURES+['classification']); missing=required-set(df.columns)
  if missing: raise ValueError(f'Dataset is missing required fields: {sorted(missing)}')
  labels=df['classification'].str.lower(); invalid=set(labels)-{'normal','suspicious','faulty'}
  if invalid: raise ValueError(f'Invalid labels: {invalid}')
